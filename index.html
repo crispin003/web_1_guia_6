@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide 6 - Web 1</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- local style     -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="images/umb_shield.png" style="width: 15%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="background-overlay text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/Hamburger.png" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Hamburger</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-burgers" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-burgers" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-burgers" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/pizza.jpg" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-pizza" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-pizza" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-pizza" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/french_fries.jpeg" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">French Fries</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-french-fries" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-french-fries" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-french-fries" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 15px;">
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/coca_cola.jpg" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Coca cola</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-coca-cola" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-coca-cola" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-coca-cola" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/hot_dog.jpg" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Dog</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-hot-dog" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-hot-dog" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-hot-dog" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-dark" style="width: 20rem;">
+                            <img src="images/sprite.jpg" height="240px" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Sprite</h5>
+                                <div class="row align-items-center row-cols-3">
+                                    <div class="col-5">
+                                        <button id="less-sprite" class="btn btn-primary">-</button>
+                                    </div>
+                                    <div class="mx-auto">
+                                        <h5 id="number-sprite" class="mx-auto">0</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="more-sprite" class="btn btn-primary float-right">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px;">
+                    <button id="makeOrder" class="mx-auto btn btn-primary">Make an order</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- example of the table -->
+    <div class="container">
+        <div id="post-make-order">
+            <table id="table" class="table" style="margin-top: 50px;">
+                <thead>
+                    <tr>
+                        <th scope="col">product name</th>
+                        <th scope="col">amount</th>
+                        <th scope="col">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hamburger</td>
+                        <td>3</td>
+                        <td>$18000</td>
+                    </tr>
+                    <tr>
+                        <td>Coca cola</td>
+                        <td>3</td>
+                        <td>$6000</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Total</td>
+                        <td>6</td>
+                        <td>$24000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row" style="margin-top: 25px; margin-bottom: 15px;">
+                <button id="btnBuy" class="mx-auto btn btn-primary btn-block">confirm your purchase</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/javaScript.js"></script>
+</body>
+
+</html>
